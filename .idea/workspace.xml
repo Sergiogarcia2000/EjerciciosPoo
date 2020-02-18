@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f70284-4d47-4c50-ab23-1738058c51ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/Conjunto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/EjercicioOpcional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Ejercicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Ejercicio2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Vector3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Vector3D.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,14 +32,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/sergio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergi\IdeaProjects\asd\EjerciciosPoo\src\com\sergio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioOpcional">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Ejercicio2">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sergio.Ejercicio2.Ejercicio2" />
       <module name="EjerciciosPoo" />
@@ -77,23 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EjercicioOpcional" />
         <item itemvalue="Application.Ejercicio2" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.EjercicioOpcional" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -107,6 +109,17 @@
       <updated>1581719456085</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581926709785">

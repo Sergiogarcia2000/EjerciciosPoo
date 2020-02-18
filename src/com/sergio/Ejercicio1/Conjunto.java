@@ -43,7 +43,7 @@ public class Conjunto {
         for (Integer i : this.set)
             c3.addElement(i);
 
-        for (Integer i : c2.getSet())
+        for (Integer i : c2.set)
             c3.addElement(i);
 
         return c3;
@@ -58,7 +58,7 @@ public class Conjunto {
         Conjunto c3 = new Conjunto();
 
         for (Integer i : this.set){
-            if (c2.getSet().contains(i))
+            if (c2.set.contains(i))
                 c3.addElement(i);
         }
         return c3;
@@ -73,7 +73,7 @@ public class Conjunto {
         Conjunto c3 = new Conjunto();
 
         for (Integer i : this.set){
-            if (!c2.getSet().contains(i))
+            if (!c2.set.contains(i))
                 c3.addElement(i);
         }
         return c3;
@@ -96,7 +96,7 @@ public class Conjunto {
     public boolean checkSubSet(Conjunto c2){
 
         for (Integer i : this.set){
-            if(!c2.getSet().contains(i))
+            if(!c2.set.contains(i))
                 return false;
         }
         return true;
@@ -109,7 +109,7 @@ public class Conjunto {
      */
     public boolean checkEquals(Conjunto c2){
 
-        if (this.set.size() == c2.getSet().size()){
+        if (this.set.size() == c2.set.size()){
 
             for (Integer i : this.set){
                 if (!c2.checkElement(i))
@@ -121,33 +121,16 @@ public class Conjunto {
     }
 
     /**
-     * DEVUELVE LA LISTA
-     * @return LISTA
-     */
-    public List<Integer> getSet(){
-        return this.set;
-    }
-
-    /**
-     * COMPRUEBA SI LA LISTA DEL OTRO OBJETO ES IGUAL A LA DE ESTE OBJETO
-     * @param set OTRO OBJETO
-     * @return TRUE O FALSE
-     */
-    public boolean checkSet(Conjunto set){
-        return this.set.equals(set.getSet());
-    }
-
-    /**
      * @return STRING CON ELEMENTOS
      */
-    public String printSet(){
+    @Override
+    public String toString(){
         String s = "{ ";
         for (Integer i : this.set){
             s += Integer.toString(i) + ", ";
         }
         s += "}";
         return s;
-
     }
 
 }

@@ -4,34 +4,34 @@ import java.util.ArrayList;
 
 public class Vector3D {
 
-    private Integer x;
-    private Integer y;
-    private Integer z;
+    private double x;
+    private double y;
+    private double z;
 
-    public Vector3D(Integer x, Integer y, Integer z){
+    public Vector3D(double x, double y, double z){
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
-    public Integer getX() {
+    public double getX() {
         return x;
     }
 
-    public Integer getY() {
+    public double getY() {
         return y;
     }
 
-    public Integer getZ() {
+    public double getZ() {
         return z;
     }
 
     public Vector3D sumVector(Vector3D vector2){
-        return new Vector3D(this.x + vector2.getX(), this.y + vector2.getY(), this.z + vector2.getZ());
+        return new Vector3D(this.x + vector2.x, this.y + vector2.y, this.z + vector2.z);
     }
 
     public Vector3D substractVector(Vector3D vector2){
-        return new Vector3D(this.x - vector2.getX(), this.y - vector2.getY(), this.z - vector2.getZ());
+        return new Vector3D(this.x - vector2.x, this.y - vector2.y, this.z - vector2.z);
     }
 
     public double moduleVector(){
@@ -39,13 +39,21 @@ public class Vector3D {
     }
 
     public double scaleVector(Vector3D vector2){
-
-        return this.x * vector2.getX() + this.y * vector2.getY() + this.z * vector2.getZ();
-
+        return this.x * vector2.x + this.y * vector2.y + this.z * vector2.z;
     }
 
-    public void printVector(){
-        System.out.println("X: " + this.x + "\nY: " + this.y + "\nZ: " + this.z);
+    public Vector3D prductVectorial(Vector3D vector2){
+        Vector3D vec3;
+        double x = this.y * vector2.z - vector2.y * this.z;
+        double y = this.x * vector2.z - vector2.x * this.z;
+        double z = this.x * vector2.y - vector2.x * this.y;
+
+        return vec3 = new Vector3D(x, -y ,z);
+    }
+
+    @Override
+    public String toString(){
+        return "X: " + this.x + "\nY: " + this.y + "\nZ: " + this.z;
     }
 
 
