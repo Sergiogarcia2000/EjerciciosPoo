@@ -1,7 +1,5 @@
 package com.sergio.Ejercicio2;
 
-import java.util.ArrayList;
-
 public class Vector3D {
 
     private double x;
@@ -12,18 +10,6 @@ public class Vector3D {
         this.x = x;
         this.y = y;
         this.z = z;
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    public double getZ() {
-        return z;
     }
 
     public Vector3D sumVector(Vector3D vector2){
