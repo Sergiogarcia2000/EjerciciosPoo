@@ -7,8 +7,11 @@ public class Board {
     private String[][] board = new String[3][3];
     private String[][] check = new String[3][3];
     private String actualPlayer = "x";
+    private boolean game = true;
+    private static Board b;
 
     public Board(){
+
         int cont = 0;
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
@@ -17,6 +20,13 @@ public class Board {
                 cont++;
             }
         }
+    }
+
+    public static Board getInstance(){
+        if (b == null){
+            b = new Board();
+        }
+        return b;
     }
 
     public void runGame(){
@@ -56,32 +66,51 @@ public class Board {
             bot = new BOT(2);
         }
 
-        while (!this.checkWinner()){
+        while (game) {
+
             System.out.println("Turno del jugador: " + this.getActualPlayer());
             System.out.println(this);
-            if (this.getActualPlayer().equals("x")){
-                try{
+            if (this.getActualPlayer().equals("x")) {
+                try {
                     System.out.print("Introduce la fila(1-3): ");
                     int row = sc.nextInt();
                     System.out.print("Introduce la columna(1-3): ");
                     int col = sc.nextInt();
                     if (!board[row - 1][col - 1].equals("x") && !board[row - 1][col - 1].equals("o"))
-                        this.nextMove(row - 1,col - 1);
-                }catch (ArrayIndexOutOfBoundsException e){
+                        this.nextMove(row - 1, col - 1);
+                } catch (ArrayIndexOutOfBoundsException e) {
                     System.out.println("Entrada inválida.");
                 }
-            }else{
-                this.board = bot.play(this.board);
+            } else {
+                int[] botPlay = bot.play(this.board);
+                if (botPlay[0] == -1) {
+                    game = false;
+                }
+                System.out.println("Bot playing: " + botPlay[0] + " " + botPlay[1]);
+                this.board[botPlay[0]][botPlay[1]] = "o";
+                this.check[botPlay[0]][botPlay[1]] = "o";
                 nextTurn();
             }
-        }
-        System.out.println("Gana: " + this.getWinner());
+            if (checkWinner(this.board) != null){
+                if (this.checkWinner(this.board).equals("x")){
+                    game = false;
+                    System.out.println("GANA JUGADOR 1");
+                }else if ( this.checkWinner(this.board).equals("o")){
+                    game = false;
+                    System.out.println("GANA BOT");
+                }else if ( this.checkWinner(this.board).equals("TIE")){
+                    game = false;
+                    System.out.println("EMPATE");
+                }
+            }
 
+        }
     }
 
     private void playerVsPlayer(){
         Scanner sc = new Scanner(System.in);
-        while(!this.checkWinner()){
+        while(game){
+
             System.out.println("Turno del jugador " + this.getActualPlayer());
             System.out.println(this);
             try{
@@ -93,8 +122,8 @@ public class Board {
             }catch (ArrayIndexOutOfBoundsException e){
                 System.out.println("Entrada inválida.");
             }
+            this.checkWinner(this.check);
         }
-        System.out.println("Gana: " + this.getWinner());
     }
 
     private void nextTurn(){
@@ -109,35 +138,54 @@ public class Board {
         return actualPlayer;
     }
 
-    private String getWinner(){
+    private void getWinner(){
         if (actualPlayer.equals("x")){
-            return "Jugador 2";
+            System.out.println("Gana el Jugador 2");
         }else{
-            return "Jugador 1";
+            System.out.println("Gana el Jugador 1");
         }
     }
 
-    private boolean checkWinner(){
+    public String checkWinner(String[][] check){
 
-            // 0 1 2
-            // 3 4 5
-            // 6 7 8
-            if (check[0][0].equals(check[0][1]) && check[0][0].equals(check[0][2])) {
-                return true;
-            } else if (check[1][0].equals(check[1][1]) && check[1][1].equals(check[1][2])) {
-                return true;
-            } else if (check[2][0].equals(check[2][1]) && check[2][1].equals(check[2][2])) {
-                return true;
-            } else if (check[0][0].equals(check[1][0]) && check[1][0].equals(check[2][0])) {
-                return true;
-            } else if (check[0][1].equals(check[1][1]) && check[1][1].equals(check[2][1])) {
-                return true;
-            } else if (check[0][2].equals(check[1][2]) && check[0][2].equals(check[2][2])) {
-                return true;
-            } else if (check[0][0].equals(check[1][1]) && check[1][1].equals(check[2][2])) {
-                return true;
-            } else return check[0][2].equals(check[1][1]) && check[0][2].equals(check[2][0]);
+        String winner = null;
 
+        // 0 1 2
+        // 3 4 5
+        // 6 7 8
+        if (check[0][0].equals(check[0][1]) && check[0][0].equals(check[0][2])) {
+            winner = check[0][0];
+        } else if (check[1][0].equals(check[1][1]) && check[1][1].equals(check[1][2])) {
+            winner = check[1][0];
+        } else if (check[2][0].equals(check[2][1]) && check[2][1].equals(check[2][2])) {
+            winner = check[2][0];
+        } else if (check[0][0].equals(check[1][0]) && check[1][0].equals(check[2][0])) {
+            winner = check[0][0];
+        } else if (check[0][1].equals(check[1][1]) && check[1][1].equals(check[2][1])) {
+            winner = check[0][1];
+        } else if (check[0][2].equals(check[1][2]) && check[0][2].equals(check[2][2])) {
+            winner = check[0][2];
+        } else if (check[0][0].equals(check[1][1]) && check[1][1].equals(check[2][2])) {
+            winner = check[0][0];
+        } else if (check[0][2].equals(check[1][1]) && check[0][2].equals(check[2][0])){
+            winner = check[0][2];
+        }
+
+        int freeSpaces = 0;
+
+        for (int i  = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                if (check[i][j].equals(" ")){
+                    freeSpaces++;
+                }
+            }
+        }
+
+        if (winner == null && freeSpaces == 0) {
+            return "TIE";
+        } else {
+            return winner;
+        }
     }
 
     private void nextMove(int row, int col){

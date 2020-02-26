@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b3f70284-4d47-4c50-ab23-1738058c51ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjerciciosPoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosPoo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/BOT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/BOT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,24 +36,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../EjerciciosArrays" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergi\IdeaProjects\asd\EjerciciosPoo\src\com\sergio" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Ejercicio3">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -115,6 +102,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -146,22 +145,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581926709785" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581981949829">
+    <state width="1877" height="655" key="GridCell.Tab.0.bottom" timestamp="1582716813532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581981949829" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581981949828">
+    <state width="1877" height="655" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
+    <state width="1877" height="655" key="GridCell.Tab.0.center" timestamp="1582716813532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581981949828" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581981949828">
+    <state width="1877" height="655" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
+    <state width="1877" height="655" key="GridCell.Tab.0.left" timestamp="1582716813532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581981949828" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581981949828">
+    <state width="1877" height="655" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
+    <state width="1877" height="655" key="GridCell.Tab.0.right" timestamp="1582716813532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581981949828" />
+    <state width="1877" height="655" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581978732468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -178,9 +177,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581978732468" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1581926694036">
+    <state x="461" y="161" key="SettingsEditor" timestamp="1582711238561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581926694036" />
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582711238561" />
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1582711253080">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582711253080" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582488419069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582488419069" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582487816210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582487816210" />
   </component>
 </project>

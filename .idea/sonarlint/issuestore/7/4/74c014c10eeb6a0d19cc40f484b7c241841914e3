@@ -1,0 +1,6 @@
+
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§µ¬‚üÿÿÿÿ
+j$squid:AssignmentInSubExpressionCheck%".Extract the assignment out of this expression.(…™èïúÿÿÿÿ8¾òäœ‡.
+bsquid:HiddenFieldCheck!"4Rename "x" which hides the field declared at line 5.(¿¨·õüÿÿÿÿ8¾òäœ‡.
+bsquid:HiddenFieldCheck""4Rename "y" which hides the field declared at line 6.(ðî…ðúÿÿÿÿ8¾òäœ‡.
+bsquid:HiddenFieldCheck#"4Rename "z" which hides the field declared at line 7.(¼þ°°ÿÿÿÿÿ8¾òäœ‡.
