@@ -7,8 +7,8 @@ public class Ejercicio3 {
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
-        Board b = new Board();
-        b.runGame();
+        Board.getInstance()
+                .runGame();
         sc.close();
     }
 }

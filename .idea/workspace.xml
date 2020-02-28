@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,21 +146,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581926709785" />
-    <state width="1877" height="655" key="GridCell.Tab.0.bottom" timestamp="1582716813532">
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom" timestamp="1582890750197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582890750197" />
     <state width="1877" height="655" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="655" key="GridCell.Tab.0.center" timestamp="1582716813532">
+    <state width="1877" height="122" key="GridCell.Tab.0.center" timestamp="1582890750197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582890750197" />
     <state width="1877" height="655" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="655" key="GridCell.Tab.0.left" timestamp="1582716813532">
+    <state width="1877" height="122" key="GridCell.Tab.0.left" timestamp="1582890750197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582890750197" />
     <state width="1877" height="655" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="655" key="GridCell.Tab.0.right" timestamp="1582716813532">
+    <state width="1877" height="122" key="GridCell.Tab.0.right" timestamp="1582890750197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="122" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582890750197" />
     <state width="1877" height="655" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581978732468">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -181,13 +186,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582711238561" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1582711253080">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1582885161195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582885161195" />
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582711253080" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582488419069">
+    <state x="342" y="94" key="new project wizard" timestamp="1582885281091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="342" y="94" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582885281091" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582882167427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582882167427" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582488419069" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582487816210">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -1,5 +1,4 @@
 package com.sergio.Ejercicio3;
-
 import java.util.Random;
 
 public class BOT {
@@ -10,39 +9,31 @@ public class BOT {
         this.difficult = difficult;
     }
 
-    private int[] easyPlay(String[][] board){
+    private void easyPlay(){
         Random rand = new Random();
-        int attempts = 20;
-        while (attempts >= 0){
-            int row = rand.nextInt(3);
-            int col = rand.nextInt(3);
-            System.out.println("Row: " + row + " Col: " + col);
-            if (!board[row][col].equals("x") && !board[row][col].equals("o")){
-                board[row][col] = "o";
-                return new int[]{row, col};
-            }
-            attempts--;
-        }
-        return new int[]{-1,-1};
+
+        int row = rand.nextInt(3);
+        int col = rand.nextInt(3);
+        Board.getInstance()
+                .nextPlay(row, col);
     }
 
-    private int[] hardPlay(String[][] board){
+
+    private int[] hardPlay(){
 
         int bestScore = Integer.MIN_VALUE;
 
         int[] move = new int[2];
 
-        System.out.println(move[0] + " " + move[1]);
-
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
 
-                if (board[i][j].equals(" ")) {
-                    System.out.println("Entra en " + i + " " + j);
-                    board[i][j] = "o";
-                    int score = minimax(board, 0, false);
-                    board[i][j] = " ";
-                    System.out.println("Score: " + score + " bestscore " + bestScore);
+                if (Board.getInstance().getGameBoard()[i][j].equals(" ")) {
+                    Board.getInstance()
+                            .nextPlay(i, j, "O");
+                    int score = minimax(false);
+                    Board.getInstance()
+                            .nextPlay(i, j, " ");
                     if (score > bestScore){
                         bestScore = score;
                         move[0] = i;
@@ -51,21 +42,20 @@ public class BOT {
                 }
             }
         }
-        System.out.println(move[0] + " " + move[1]);
         return move;
     }
 
-    private int minimax(String[][] board, int depth, boolean isMaximizing) {
+    private int minimax(boolean isMaximizing) {
 
-        String result = Board.getInstance().checkWinner(board);
+        String result = Board.getInstance().checkWinner();
 
-        if (result != null){
+        if (!result.equals("NULL")){
             if (result.equals("TIE")){
                 return 0;
-            }else if (result.equals("o")){
-                return 10;
+            }else if (result.equals("O")){
+                return 1;
             }else{
-                return -10;
+                return -1;
             }
         }
 
@@ -75,25 +65,28 @@ public class BOT {
             for (int i = 0; i < 3; i++){
                 for (int j = 0; j < 3; j++){
 
-                    if (board[i][j].equals(" ")){
-                        board[i][j] = "o";
-                        int score = minimax(board, depth + 1, false);
-                        board[i][j] = " ";
+                    if (Board.getInstance().getGameBoard()[i][j].equals(" ")){
+                        Board.getInstance()
+                                .nextPlay(i, j, "O");
+                        int score = minimax(false);
+                        Board.getInstance()
+                                .nextPlay(i, j, " ");
                         bestScore = Math.max(score, bestScore);
                     }
                 }
             }
             return bestScore;
+
         }else {
             int bestScore = Integer.MAX_VALUE;
             for (int i = 0; i < 3; i++){
                 for (int j = 0; j < 3; j++){
-
-                    if (board[i][j].equals(" ")){
-
-                        board[i][j] = "x";
-                        int score = minimax(board, depth + 1, true);
-                        board[i][j] = " ";
+                    if (Board.getInstance().getGameBoard()[i][j].equals(" ")){
+                        Board.getInstance()
+                                .nextPlay(i, j, "X");
+                        int score = minimax(true);
+                        Board.getInstance()
+                                .nextPlay(i, j, " ");
                         bestScore = Math.min(score, bestScore);
                     }
                 }
@@ -102,15 +95,15 @@ public class BOT {
         }
     }
 
-    public int[] play(String[][] board){
-        int[] botPlay;
+    public void play(){
         if (this.difficult == 1){
-            botPlay = easyPlay(board);
+            easyPlay();
         }else{
-            botPlay = hardPlay(board);
+            int[] bot = hardPlay();
+            Board.getInstance()
+                    .nextPlay(bot[0], bot[1]);
         }
 
-        return botPlay;
     }
 
 }
