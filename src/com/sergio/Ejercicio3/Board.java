@@ -39,7 +39,6 @@ public class Board {
         System.out.println("¿Contra quién deseas jugar?");
         System.out.println("1. Jugador");
         System.out.println("2. BOT");
-        System.out.println("3. BOT VS BOT");
         System.out.print(">>> ");
         int option = sc.nextInt();
 
@@ -47,8 +46,6 @@ public class Board {
             playerVsPlayer();
         }else if (option == 2) {
             playerVsBot();
-        }else if (option == 3){
-            botVsBot();
         }else{
             System.out.println("Entrada desconocida.");
         }
@@ -68,8 +65,8 @@ public class Board {
         System.out.println("2. Difícil");
 
         do{
-            difficult = sc.nextInt();
             System.out.print(">>> ");
+            difficult = sc.nextInt();
         }while(difficult != 1 && difficult != 2);
 
         if (difficult == 1){
@@ -82,7 +79,7 @@ public class Board {
 
             System.out.println("Turno del jugador: " + actualPlayer);
             System.out.println(this);
-            if (actualPlayer.equals("X")) {
+            if (actualPlayer.equalsIgnoreCase("X")) {
                 try {
                     System.out.print("Introduce la fila(1-3): ");
                     int row = sc.nextInt();
@@ -93,41 +90,9 @@ public class Board {
                     System.out.println("Entrada inválida.");
                 }
             } else {
-                bot.play("O");
+                bot.play();
             }
 
-            checkEndGame();
-        }
-    }
-
-    private void botVsBot(){
-
-        Random rand = new Random();
-        actualPlayer = players[rand.nextInt(2)];
-        Scanner sc = new Scanner(System.in);
-        BOT bot;
-        int difficult = 0;
-
-
-        System.out.println("Selecciona el tipo de dificultad para los Bots: ");
-        System.out.println("1. Fácil");
-        System.out.println("2. Difícil");
-
-        do{
-            difficult = sc.nextInt();
-            System.out.print(">>> ");
-        }while(difficult != 1 && difficult != 2);
-
-        if (difficult == 1){
-            bot = new BOT(1);
-        }else{
-            bot = new BOT(2);
-        }
-
-        while (game) {
-            System.out.println("Turno del jugador: " + actualPlayer);
-            System.out.println(this);
-            bot.play(actualPlayer);
             checkEndGame();
         }
     }
@@ -158,14 +123,13 @@ public class Board {
 
     private void checkEndGame(){
         nextTurn();
-        if (checkWinner().equals(actualPlayer)){
+        if (checkWinner().equalsIgnoreCase(actualPlayer)){
             System.out.println("Gana el jugador: " + actualPlayer);
             game = false;
-        }else if (checkWinner().equals("TIE")){
+        }else if (checkWinner().equalsIgnoreCase("TIE")){
             System.out.println("EMPATE");
             game = false;
         }
-
         if (!checkWinner().equals("NONE")){
             endGame();
         }
@@ -180,7 +144,7 @@ public class Board {
 
         String winner = "NONE";
 
-        if (gameBoard[0][0].equals(gameBoard[0][1]) && gameBoard[0][0].equals(gameBoard[0][2])) {
+        if (gameBoard[0][0].equals(gameBoard[0][1]) && gameBoard[0][0].equals(gameBoard[0][2]) && !gameBoard[0][0].equals(" ")) {
             winner = gameBoard[0][0];
         } else if (gameBoard[1][0].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[1][2]) && !gameBoard[1][0].equals(" ")) {
             winner = gameBoard[1][0];
@@ -208,7 +172,7 @@ public class Board {
             }
         }
 
-        if (winner == "NONE" && freeSpaces == 0) {
+        if (winner.equalsIgnoreCase("NONE") && freeSpaces == 0) {
             return "TIE";
         } else {
             return winner;
@@ -228,7 +192,7 @@ public class Board {
     }
 
     private void nextTurn() {
-        if (actualPlayer.equals("X")){
+        if (actualPlayer.equalsIgnoreCase("X")){
             actualPlayer = "O";
         }else{
             actualPlayer = "X";
@@ -245,6 +209,7 @@ public class Board {
         System.out.println("2. Salir");
         do {
             try{
+                System.out.print(">>>");
                 opt = sc.nextInt();
             } catch (InputMismatchException e){
                 System.out.println("Has introducido un valor invalido");
