@@ -7,10 +7,6 @@ public class Conjunto {
 
     private List<Integer> set = new ArrayList<>();
 
-    public Conjunto(){
-
-    }
-
     /**
      * AÑADE UN ELEMENTO A LA LISTA
      * COMPRUEBA SI YA ESTÁ, SI NO ESTÁ LO AÑADE
@@ -21,7 +17,6 @@ public class Conjunto {
         if (!this.set.contains(num)){
             this.set.add(num);
         }
-
     }
 
     /**
@@ -34,6 +29,7 @@ public class Conjunto {
 
     /**
      * GENERA UN NUEVO CONJUNTO A PARTIR DEL LLAMADO Y UNO PASADO POR PARÁMETRO
+     * AÑADE TODOS LOS ELEMENTOS DE CADA CONJUNTO
      * @param c2 SEGUNDO CONJUNTO
      * @return LA UNIÓN ENTRE LOS DOS CONJUNTOS
      */
@@ -51,6 +47,7 @@ public class Conjunto {
 
     /**
      * GENERA UN NUEVO CONJUNTO A PARTIR DE LLAMADO Y DEL PASADO POR PARÁMETRO
+     * COMPRUEBA QUE CADA ELEMENTO ESTA EN EL SEGUNDO Y LO AÑADE
      * @param c2 SEGUNDO CONJUNTO
      * @return LA INTERSECCIÓN ENTRE LOS DOS CONJUNTOS
      */
@@ -66,6 +63,7 @@ public class Conjunto {
 
     /**
      * GENERA UN CONJUNTO CON LOS QUE ESTÉN EN EL PRIMERO Y NO EN EL SEGUNDO
+     * RECORRE EL SEGUNDO CONJUNTO Y CUANDO NO LO CONTIENE SE AÑADE
      * @param c2 SEGUNDO CONJUNTO
      * @return LA DIFERENCIA ENTRE LOS DOS CONJUNTOS
      */
@@ -90,6 +88,7 @@ public class Conjunto {
 
     /**
      * COMPRUEBA SI EL SET ES UN SUBCONJUNTO DEL SEGUNDO
+     * RECORRE EL CONJUNTO Y SI ESE ELEMENTO NO ESTA EN EL SEGUNDO RETORNA FALSE
      * @param c2 SEGUNDO CONJUNTO
      * @return BOOLEANA DEPENDIENDO
      */
@@ -103,7 +102,9 @@ public class Conjunto {
     }
 
     /**
-     * COMPRUEBA SI LOS DOS CONJUNTOS SON IDÉNTICOS
+     * COMPRUEBA SI LOS DOS CONJUNTOS TIENEN EL MISMO TAMAÑO
+     * PARA CADA ELEMENTO SE COMPRUEBA SI ESTÁ EN EL OTRO CONJUNTO
+     * SI NO ES ASÍ DEVUELVE FALSE SINO DEVUELVE TRUE
      * @param c2 SEGUNDO CONJUNTO
      * @return BOOLEANA
      */
@@ -132,5 +133,4 @@ public class Conjunto {
         s += "}";
         return s;
     }
-
 }

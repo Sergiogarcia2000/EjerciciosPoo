@@ -3,6 +3,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 
+/**
+ * @author SERGIO GARCÍA MAYO
+ */
 public class Board {
 
     private String[][] gameBoard;
@@ -12,12 +15,15 @@ public class Board {
     private Boolean game;
 
     public Board(){
+        // DECLARA EL TABLERO
         this.gameBoard = new String[3][3];
+        // RELLENA EL ARRAY
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
                 gameBoard[i][j] = " ";
             }
         }
+        // ESTABLECE LOS JUGADORES
         players = new String[2];
         players[0] = "X";
         players[1] = "O";
@@ -25,6 +31,11 @@ public class Board {
         game = true;
     }
 
+    /**
+     * GETINSTANCE
+     * CLASE SINGLETON PARA PODER UTILIZAR LA MISMA INSTANCIA DESDE CUALQUIER SITIO
+     * @return INSTANCIA DE LA CALSE
+     */
     public static Board getInstance(){
         if (board == null) {
             board = new Board();
@@ -32,6 +43,10 @@ public class Board {
         return board;
     }
 
+    /**
+     * RUNGAME
+     * INICIA EL JUEGO
+     */
     public void runGame(){
 
         Scanner sc = new Scanner(System.in);
@@ -51,6 +66,13 @@ public class Board {
         }
     }
 
+    /**
+     * PLAYERVSBOT
+     * ELIGE EL JUGADOR QUE EMPIEZA ALEATORIAMENTE
+     * METODO PARA JUGAR CONTRA UN BOT
+     * ELIGES EL TIPO DE DIFICULTAD
+     * INICIA EL BUCLE DE JUEGO
+     */
     private void playerVsBot() {
 
         Random rand = new Random();
@@ -97,6 +119,12 @@ public class Board {
         }
     }
 
+    /**
+     * PLAYERVSPLAYER
+     * ELIGE EL JUGADOR QUE EMPIEZA ALEATORIAMENTE
+     * ELIGES EL TIPO DE DIFICULTAD
+     * INICIA EL BUCLE DE JUEGO
+     */
     private void playerVsPlayer() {
         Random rand = new Random();
 
@@ -140,6 +168,14 @@ public class Board {
         return this.gameBoard;
     }
 
+    /**
+     * COMPROBAR EL GANADOR
+     * HACE TODAS LAS COMPROBACIONES
+     * AL EMPEZAR EL GANADOR ES NONE
+     * SI ENCUENTRA UN GANADOR ESTE SE ALMACENA EN LA VARIABLE WINNER
+     * SI NO QUEDAN HUECOS Y NO HAY GANADOR DEVULVE EMPATE
+     * @return SI NO HAY GANADOR || EMPATE || GANADOR
+     */
     public String checkWinner() {
 
         String winner = "NONE";
@@ -179,6 +215,12 @@ public class Board {
         }
     }
 
+    /**
+     * NEXTPLAY
+     * SI ROW Y COL NO ESTAN OCUPADOS REALIZA ESA JUGADA Y SUSTITUYE EL ESPACIO EN BLANCO POR EL JUGADOR ACTUAL
+     * @param row FILA
+     * @param col COLUMNA
+     */
     public void nextPlay(int row, int col){
         if (!gameBoard[row][col].equals("X") && !gameBoard[row][col].equals("O")){
             gameBoard[row][col] = actualPlayer;
@@ -186,11 +228,23 @@ public class Board {
         }
     }
 
+    /**
+     * NEXTPLAY
+     * IGUAL QUE EL ANTERIOR PERO ESTA VEZ TU INTRODUCES QUE JUGADOR VA A REALIZAR LA JUGADA
+     * UTILIZADO PARA EL ALGORITMO MINIMAX
+     * @param row FILA
+     * @param col COLUMNA
+     * @param player JUGADOR
+     */
     public void nextPlay(int row, int col, String player){
         this.gameBoard[row][col] = player;
         nextTurn();
     }
 
+    /**
+     * NEXTTURN
+     * CAMBIA EL JUGADOR ACTUAL
+     */
     private void nextTurn() {
         if (actualPlayer.equalsIgnoreCase("X")){
             actualPlayer = "O";
@@ -199,6 +253,11 @@ public class Board {
         }
     }
 
+    /**
+     * ENDGAME
+     * SE LLAMA AL TERMINAR EL JUEGO
+     * TE PIDE SI QUIERES VOLVER A JUGAR O NO
+     */
     private void endGame(){
 
         Scanner sc = new Scanner(System.in);

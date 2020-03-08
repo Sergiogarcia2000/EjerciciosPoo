@@ -139,13 +139,13 @@ public class Conjunto<T> {
     /**
      * @return STRING CON ELEMENTOS
      */
-    public void printSet(){
-
+    @Override
+    public String toString(){
+        StringBuilder s = new StringBuilder("{ ");
         for (T i : this.set){
-            System.out.print(i + ", ");
+            s.append(i).append(", ");
         }
-        System.out.println("");
-
+        s.append("}");
+        return s.toString();
     }
-
 }

@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f70284-4d47-4c50-ab23-1738058c51ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio1/Conjunto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio1/Conjunto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Ejercicio2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Ejercicio2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio2/Vector3D.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/BOT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/BOT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Ejercicio3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/Ejercicio3/Ejercicio3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/EjericicoOpcional/EjercicioOpcional.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosPoo/com/sergio/EjericicoOpcional/EjercicioOpcional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Vector3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio2/Vector3D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/Conjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/Conjunto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/EjercicioOpcional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/EjercicioOpcional.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +49,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../EjerciciosArrays" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -47,19 +59,7 @@
       <recent name="C:\Users\sergi\IdeaProjects\asd\EjerciciosPoo\src\com\sergio" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Ejercicio3">
+  <component name="RunManager" selected="Application.EjercicioOpcional">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sergio.Ejercicio2.Ejercicio2" />
       <module name="EjerciciosPoo" />
@@ -111,12 +111,24 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EjercicioOpcional" />
         <item itemvalue="Application.Ejercicio3" />
         <item itemvalue="Application.Ejercicio2" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.EjercicioOpcional" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,25 +161,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581926709785" />
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1583312566079">
+    <state width="1877" height="437" key="GridCell.Tab.0.bottom" timestamp="1583701676244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583312566079" />
+    <state width="1877" height="437" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583701676244" />
     <state width="1877" height="655" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1583312566079">
+    <state width="1877" height="437" key="GridCell.Tab.0.center" timestamp="1583701676243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583312566079" />
+    <state width="1877" height="437" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583701676243" />
     <state width="1877" height="655" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1583312566079">
+    <state width="1877" height="437" key="GridCell.Tab.0.left" timestamp="1583701676243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583312566079" />
+    <state width="1877" height="437" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583701676243" />
     <state width="1877" height="655" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1583312566079">
+    <state width="1877" height="437" key="GridCell.Tab.0.right" timestamp="1583701676244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583312566079" />
+    <state width="1877" height="437" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583701676244" />
     <state width="1877" height="655" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581978732468">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -189,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582711238561" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1582885161195">
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1583692500037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582885161195" />
+    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583692500037" />
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582711253080" />
     <state x="342" y="94" key="new project wizard" timestamp="1582885281091">
       <screen x="0" y="0" width="1920" height="1040" />
