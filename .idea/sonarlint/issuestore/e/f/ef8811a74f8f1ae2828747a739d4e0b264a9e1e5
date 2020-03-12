@@ -1,9 +1,0 @@
-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß ·¸ÿÿÿÿÿ
-usquid:S3776*"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÇìŸ÷øÿÿÿÿ8§Ú‡.
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(£¨’Øúÿÿÿÿ
-0squid:S1700"Rename field "board"(âÉ•çúÿÿÿÿ
-qsquid:S1871¦"MThis branch's code block is the same as the block for the branch on line 158.(Üıİıÿÿÿÿ8üÉ´‡ˆ.
-lsquid:S1871–"MThis branch's code block is the same as the block for the branch on line 138.(¹³—ù8¬´‡ˆ.
-qsquid:S1871¢"MThis branch's code block is the same as the block for the branch on line 138.(ÇÑÍçşÿÿÿÿ8üÉ´‡ˆ.
-asquid:UnusedPrivateMethod"0Remove this unused private "checkWinner" method.(£¨’Øúÿÿÿÿ8ò§Â‡ˆ.
