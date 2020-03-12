@@ -1,62 +1,59 @@
 package com.sergio.EjericicoOpcional;
 
 
-import com.sergio.EjericicoOpcional.Conjunto;
-
 public class EjercicioOpcional {
 
     public static void main(String[] args) {
 
-        Conjunto set = new Conjunto();
-        Conjunto set2 = new Conjunto();
+        ConjuntoGenerico<String> setString = new ConjuntoGenerico<>();
+        ConjuntoGenerico<String> setString2 = new ConjuntoGenerico<>();
 
         // AÑADIMOS ELEMENTOS AL PRIMER SET
-        set.addElement("hola");
-        set.addElement(7);
-        set.addElement(8);
-        set.addElement(7.33);
-        set.addElement(true);
-        set.addElement(432);
-        set.addElement(20);
+        setString.addElement("Hola");
+        setString.addElement("Buenas tardes");
+        setString.addElement("asd");
+        setString.addElement("perez");
+        setString.addElement("123");
 
         // IMPRIMIMOS EL SET
         System.out.print("Set 1: ");
-        System.out.println(set);
+        System.out.println(setString);
 
         // AÑADIMOS ELEMENTOS AL SEGUNDO SET
-        set2.addElement("hola");
-        set2.addElement(8);
-        set2.addElement(7);
-        set2.addElement(12);
-        set2.addElement(27);
+        setString2.addElement("Hola");
+        setString2.addElement("asd");
+        setString2.addElement("Buenas tardes");
+        setString2.addElement("Que tal");
+        setString2.addElement("adios");
 
         // IMPRIMIMOS EL SET
         System.out.print("Set 2: ");
-        System.out.println(set2);
-        System.out.println(set);
+        System.out.println(setString2);
+
 
         System.out.println("===========");
         // ELIMINAMOS ELEMENTOS
 
-        set.removeElement(20);
-        set.removeElement(true);
+        System.out.println("Elimino la string '123'");
+
+        setString.removeElement("123");
         System.out.print("Nuevo Set 1: ");
-        System.out.println(set);
+        System.out.println(setString);
 
         System.out.println("============");
         // UNION INTERSECCION Y DIFERENCIA CON SET3
 
-        Conjunto set3;
+        ConjuntoGenerico<String> set3;
 
-        set3 = set.union(set2);
+        set3 = setString.union(setString2);
         System.out.print("Set 3 union(set1, set2): ");
         System.out.println(set3);
 
-        set3 = set.intersect(set2);
+        set3 = setString.intersect(setString2);
         System.out.print("Set 3 interseccion(set1, set2): ");
         System.out.println(set3);
 
-        set3 = set.difference(set2);
+        set3 = setString.difference(setString2);
         System.out.print("Set 3 diferencia(set1, set2): ");
         System.out.println(set3);
 
@@ -64,54 +61,47 @@ public class EjercicioOpcional {
 
         // COMPROBACIONES ENTRE CONJUNTOS
 
-        System.out.println("Comprobar si un conjunto tiene un número: ");
-        System.out.println(set.checkElement(3));
-        System.out.println(set.checkElement(7.33));
-        System.out.println(set.checkElement(7));
+        System.out.println("Comprobar si un conjunto tiene una cadena: ");
+        System.out.println("Cadena 'Hola': ");
+        System.out.println(setString.checkElement("Hola"));
+        System.out.println("Cadena 'Aprobado': ");
+        System.out.println(setString.checkElement("Aprobado"));
+        System.out.println("Cadena 'perez': ");
+        System.out.println(setString.checkElement("perez"));
 
         System.out.println("Comprobar si un conjunto es subconjunto de otro");
 
-        System.out.print("Set 1: ");
-        System.out.println(set);
-        System.out.print("Set 2: ");
-        System.out.println(set2);
+        System.out.println("Set 1: " + setString);
+        System.out.println("Set 2: " + setString2);
 
-            // DEJANDOLO TAL CUAL
-        System.out.println("Tal cual: " + set.checkSubSet(set2));
+        // DEJÁNDOLO TAL CUAL
+        System.out.println("Tal cual: " + setString.checkSubSet(setString2));
 
-        set.removeElement(52);
-        set.removeElement(432);
-        set.removeElement(7.33);
+        // ELIMINO PARA AJUSTARLO
+        setString.removeElement("perez");
 
-
-        System.out.print("Set 1: ");
-        System.out.println(set);
-        System.out.print("Set 2: ");
-        System.out.println(set2);
-
-            // AJUSTÁNDOLO
-        System.out.println("Ajustado: " + set.checkSubSet(set2));
+        System.out.println("Set 1: " + setString);
+        System.out.println("Set 2: " + setString2);
+        // AJUSTÁNDOLO
+        System.out.println("Ajustado: " + setString.checkSubSet(setString2));
 
 
         System.out.println("Comprobar si dos conjuntos son iguales");
 
 
-        System.out.print("Set 1: " );
-        System.out.println(set);
-        System.out.println("Set 2: ");
-        System.out.println(set2);
-            // DEJÁNDOLO TAL CUAL
-        System.out.println("Tal cual: " + set.checkEquals(set2));
+        System.out.println("Set 1: " + setString);
+        System.out.println("Set 2: " + setString2);
+        // DEJÁNDOLO TAL CUAL
+        System.out.println("Tal cual: " + setString.checkEquals(setString2));
 
-        set2.removeElement(12);
-        set2.removeElement(27);
+        setString2.removeElement("Que tal");
+        setString2.removeElement("adios");
 
-        System.out.println("Set 1: ");
-        System.out.println(set);
-        System.out.println("Set 2: ");
-        System.out.println(set2);
+        System.out.println("Set 1: " + setString);
+        System.out.println("Set 2: " + setString2);
 
-            // AJUSTÁNDOLO
-        System.out.println("Ajustado: " + set.checkEquals(set2));
+        // AJUSTÁNDOLO
+        System.out.println("Ajustado: " + setString.checkEquals(setString2));
+
     }
 }

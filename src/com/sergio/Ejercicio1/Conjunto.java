@@ -126,11 +126,12 @@ public class Conjunto {
      */
     @Override
     public String toString(){
-        String s = "{ ";
+        StringBuilder s = new StringBuilder("{ ");
         for (Integer i : this.set){
-            s += Integer.toString(i) + ", ";
+            s.append(Integer.toString(i)).append(", ");
         }
-        s += "}";
-        return s;
+        s.replace(s.length()-2, s.length()-1, "");
+        s.append("}");
+        return s.toString();
     }
 }

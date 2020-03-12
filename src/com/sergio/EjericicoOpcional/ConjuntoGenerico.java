@@ -3,11 +3,11 @@ package com.sergio.EjericicoOpcional;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Conjunto<T> {
+public class ConjuntoGenerico<T> {
 
     private List<T> set = new ArrayList<>();
 
-    public Conjunto(){
+    public ConjuntoGenerico(){
     }
 
     /**
@@ -36,8 +36,8 @@ public class Conjunto<T> {
      * @param c2 SEGUNDO CONJUNTO
      * @return LA UNIÓN ENTRE LOS DOS CONJUNTOS
      */
-    public Conjunto<T> union(Conjunto c2){
-        Conjunto<T> c3 = new Conjunto<>();
+    public ConjuntoGenerico<T> union(ConjuntoGenerico c2){
+        ConjuntoGenerico<T> c3 = new ConjuntoGenerico<>();
 
         for (T i : this.set)
             c3.addElement(i);
@@ -53,8 +53,8 @@ public class Conjunto<T> {
      * @param c2 SEGUNDO CONJUNTO
      * @return LA INTERSECCIÓN ENTRE LOS DOS CONJUNTOS
      */
-    public Conjunto<T> intersect(Conjunto c2){
-        Conjunto<T> c3 = new Conjunto<>();
+    public ConjuntoGenerico<T> intersect(ConjuntoGenerico c2){
+        ConjuntoGenerico<T> c3 = new ConjuntoGenerico<>();
 
         for (T i : this.set){
             if (c2.getSet().contains(i))
@@ -68,8 +68,8 @@ public class Conjunto<T> {
      * @param c2 SEGUNDO CONJUNTO
      * @return LA DIFERENCIA ENTRE LOS DOS CONJUNTOS
      */
-    public Conjunto<T> difference(Conjunto c2){
-        Conjunto<T> c3 = new Conjunto<>();
+    public ConjuntoGenerico<T> difference(ConjuntoGenerico c2){
+        ConjuntoGenerico<T> c3 = new ConjuntoGenerico<>();
 
         for (T i : this.set){
             if (!c2.getSet().contains(i))
@@ -92,7 +92,7 @@ public class Conjunto<T> {
      * @param c2 SEGUNDO CONJUNTO
      * @return BOOLEANA DEPENDIENDO
      */
-    public boolean checkSubSet(Conjunto c2){
+    public boolean checkSubSet(ConjuntoGenerico c2){
 
         for (T i : this.set){
             if(!c2.getSet().contains(i))
@@ -106,7 +106,7 @@ public class Conjunto<T> {
      * @param c2 SEGUNDO CONJUNTO
      * @return BOOLEANA
      */
-    public boolean checkEquals(Conjunto c2){
+    public boolean checkEquals(ConjuntoGenerico c2){
 
         if (this.set.size() == c2.getSet().size()){
 
@@ -132,7 +132,7 @@ public class Conjunto<T> {
      * @param set OTRO OBJETO
      * @return TRUE O FALSE
      */
-    public boolean checkSet(Conjunto set){
+    public boolean checkSet(ConjuntoGenerico set){
         return this.set.equals(set.getSet());
     }
 
@@ -145,6 +145,7 @@ public class Conjunto<T> {
         for (T i : this.set){
             s.append(i).append(", ");
         }
+        s.replace(s.length()-2, s.length()-1, "");
         s.append("}");
         return s.toString();
     }
