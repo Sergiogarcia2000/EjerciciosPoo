@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3f70284-4d47-4c50-ab23-1738058c51ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio1/Conjunto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/Conjunto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/ConjuntoGenerico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/EjercicioOpcional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/EjericicoOpcional/EjercicioOpcional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sergio/Ejercicio3/BOT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
       <recent name="C:\Users\sergi\IdeaProjects\asd\EjerciciosPoo\src\com\sergio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EjercicioOpcional">
+  <component name="RunManager" selected="Application.Ejercicio3">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sergio.Ejercicio2.Ejercicio2" />
       <module name="EjerciciosPoo" />
@@ -99,10 +97,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio3" />
         <item itemvalue="Application.EjercicioOpcional" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Ejercicio2" />
-        <item itemvalue="Application.Ejercicio3" />
       </list>
     </recent_temporary>
   </component>
@@ -153,25 +151,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581926709785" />
-    <state width="1877" height="643" key="GridCell.Tab.0.bottom" timestamp="1584013866443">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1584015051516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="643" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584013866443" />
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015051516" />
     <state width="1877" height="655" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="643" key="GridCell.Tab.0.center" timestamp="1584013866443">
+    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1584015051516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="643" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584013866443" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015051516" />
     <state width="1877" height="655" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="643" key="GridCell.Tab.0.left" timestamp="1584013866443">
+    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1584015051516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="643" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584013866443" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015051516" />
     <state width="1877" height="655" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
-    <state width="1877" height="643" key="GridCell.Tab.0.right" timestamp="1584013866443">
+    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1584015051516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="643" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584013866443" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015051516" />
     <state width="1877" height="655" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582716813532" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581978732468">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -189,6 +187,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581978732468" />
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1584015256394">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015256394" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1582711238561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,6 +201,10 @@
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583744303048" />
     <state x="2576" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1583850260680" />
     <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582711253080" />
+    <state x="690" y="264" key="extract.method.dialog" timestamp="1584015253745">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="264" key="extract.method.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1584015253745" />
     <state x="342" y="94" key="new project wizard" timestamp="1583744347673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

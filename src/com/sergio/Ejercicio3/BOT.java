@@ -36,7 +36,7 @@ public class BOT {
         for (int i = 0; i < 3; i++){
             for (int j = 0; j < 3; j++){
 
-                if (Board.getInstance().getGameBoard()[i][j].equals(" ")) {
+                if (isEquals(i, j)) {
                     Board.getInstance()
                             .nextPlay(i, j, "O");
                     int score = minimax(false);
@@ -51,6 +51,11 @@ public class BOT {
             }
         }
         return move;
+    }
+
+    // COMPRUEBA SI LA POSICION ESTÁ LIBRE
+    private boolean isEquals(int row, int col) {
+        return Board.getInstance().getGameBoard()[row][col].equals(" ");
     }
 
 
@@ -70,7 +75,7 @@ public class BOT {
      *    EL ALGORITMO BUSCA LA MEJOR JUGADA DEL OPONENTE
      *    BUSCA UNA POSICIÓN VACÍA Y PRUEBA A PONER LA FICHA
      *    AL PONER LA FICHA VUELVE A LLAMARSE PERO ESTA VEZ MAXMIMZANDO
-     *    AL COMPROBAR TODAS LAS POSIBILIDADES SE QUEDA CON LA PUNTUACIÓN MAS BAJA YA QUE ÉSTA ES LA QUE INDICA QUE EL OPONENTE GANA DE AHÍ MINIMIZAR
+     *    AL COMPROBAR TODAS LAS POSIBILIDADES SE QUEDA CON LA PUNTUACIÓN MAS BAJA YA QUE ÉSTA ES LA QUE INDICA QUE EL OPONENTE GANA, DE AHÍ MINIMIZAR
      * @param max BOOLEAN COMPRUEBA SI ESTA MAXIMIZANDO O MINIMIZANDO
      * @return INT CON LA PUNTUACIÓN QUE OBTIENE ESTE ÁRBOL DE JUGADAS
      */
@@ -94,7 +99,7 @@ public class BOT {
             for (int i = 0; i < 3; i++){
                 for (int j = 0; j < 3; j++){
 
-                    if (Board.getInstance().getGameBoard()[i][j].equals(" ")){
+                    if (isEquals(i, j)){
                         Board.getInstance()
                                 .nextPlay(i, j, "O");
                             score = minimax(false);
@@ -111,7 +116,7 @@ public class BOT {
             int score;
             for (int i = 0; i < 3; i++){
                 for (int j = 0; j < 3; j++){
-                    if (Board.getInstance().getGameBoard()[i][j].equals(" ")){
+                    if (isEquals(i, j)){
                         Board.getInstance()
                                 .nextPlay(i, j, "X");
                             score = minimax(true);
