@@ -1,6 +1,5 @@
 package com.sergio.Ejercicio3;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ejercicio3 {
