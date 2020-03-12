@@ -42,7 +42,7 @@ public class ConjuntoGenerico<T> {
         for (T i : this.set)
             c3.addElement(i);
 
-        for (Object i : c2.getSet())
+        for (Object i : c2.set)
             c3.addElement((T) i);
 
         return c3;
@@ -57,7 +57,7 @@ public class ConjuntoGenerico<T> {
         ConjuntoGenerico<T> c3 = new ConjuntoGenerico<>();
 
         for (T i : this.set){
-            if (c2.getSet().contains(i))
+            if (c2.set.contains(i))
                 c3.addElement(i);
         }
         return c3;
@@ -72,7 +72,7 @@ public class ConjuntoGenerico<T> {
         ConjuntoGenerico<T> c3 = new ConjuntoGenerico<>();
 
         for (T i : this.set){
-            if (!c2.getSet().contains(i))
+            if (!c2.set.contains(i))
                 c3.addElement(i);
         }
         return c3;
@@ -95,7 +95,7 @@ public class ConjuntoGenerico<T> {
     public boolean checkSubSet(ConjuntoGenerico c2){
 
         for (T i : this.set){
-            if(!c2.getSet().contains(i))
+            if(!c2.set.contains(i))
                 return false;
         }
         return true;
@@ -108,7 +108,7 @@ public class ConjuntoGenerico<T> {
      */
     public boolean checkEquals(ConjuntoGenerico c2){
 
-        if (this.set.size() == c2.getSet().size()){
+        if (this.set.size() == c2.set.size()){
 
             for (T i : this.set){
                 if (!c2.checkElement(i))
@@ -120,20 +120,12 @@ public class ConjuntoGenerico<T> {
     }
 
     /**
-     * DEVUELVE LA LISTA
-     * @return LISTA
-     */
-    public List<T> getSet(){
-        return this.set;
-    }
-
-    /**
      * COMPRUEBA SI LA LISTA DEL OTRO OBJETO ES IGUAL A LA DE ESTE OBJETO
      * @param set OTRO OBJETO
      * @return TRUE O FALSE
      */
-    public boolean checkSet(ConjuntoGenerico set){
-        return this.set.equals(set.getSet());
+    public boolean checkSet(ConjuntoGenerico c2){
+        return this.set.equals(c2.set);
     }
 
     /**

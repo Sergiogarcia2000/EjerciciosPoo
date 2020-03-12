@@ -1,6 +1,8 @@
 package com.sergio.EjericicoOpcional;
 
-
+/**
+ * @author SERGIO GARCÍA MAYO
+ */
 public class EjercicioOpcional {
 
     public static void main(String[] args) {

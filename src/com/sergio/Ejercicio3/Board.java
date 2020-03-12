@@ -28,6 +28,7 @@ public class Board {
         players[0] = "X";
         players[1] = "O";
 
+        // BUCLE DEL JUEGO
         game = true;
     }
 
@@ -46,6 +47,7 @@ public class Board {
     /**
      * RUNGAME
      * INICIA EL JUEGO
+     * - PIDE AL USUARIO CONTRA QUIÉN QUIERE JUGAR
      */
     public void runGame(){
 
@@ -149,6 +151,10 @@ public class Board {
         }
     }
 
+    /**
+     * CHECKENDGAME
+     * Comprueba si ha ganado algun jugador o empatan
+     */
     private void checkEndGame(){
         nextTurn();
         if (checkWinner().equalsIgnoreCase(actualPlayer)){
@@ -158,7 +164,7 @@ public class Board {
             System.out.println("EMPATE");
             game = false;
         }
-        if (!checkWinner().equals("NONE")){
+        if (!checkWinner().equalsIgnoreCase("NONE")){
             endGame();
         }
         nextTurn();
@@ -229,7 +235,7 @@ public class Board {
     }
 
     /**
-     * NEXTPLAY
+     * NEXT PLAY
      * IGUAL QUE EL ANTERIOR PERO ESTA VEZ TU INTRODUCES QUE JUGADOR VA A REALIZAR LA JUGADA
      * UTILIZADO PARA EL ALGORITMO MINIMAX
      * @param row FILA
@@ -242,7 +248,7 @@ public class Board {
     }
 
     /**
-     * NEXTTURN
+     * NEXT TURN
      * CAMBIA EL JUGADOR ACTUAL
      */
     private void nextTurn() {

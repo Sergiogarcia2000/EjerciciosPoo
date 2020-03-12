@@ -1,10 +1,14 @@
 package com.sergio.Ejercicio3;
 import java.util.Random;
 
+/**
+ * @author SERGIO GARCIA MAYO
+ */
 public class BOT {
 
     private int difficult;
 
+    // CONSTRUCTOR QUE ESTABLECE LA DIFICULTAD
     public BOT(int difficult){
         this.difficult = difficult;
     }
